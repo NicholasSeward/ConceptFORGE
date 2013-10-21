@@ -68,7 +68,7 @@ class solid:
             f.read(80)
             n=struct.unpack("L",f.read(4))[0]
             for i in xrange(n):
-                data=struct.unpack("ffffffffffffH",f.read(50))
+                data=struct.unpack("12f1H",f.read(50))
                 normal=data[0:3]
                 v1=data[3:6]
                 v2=data[6:9]
