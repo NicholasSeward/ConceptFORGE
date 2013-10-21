@@ -68,12 +68,20 @@ class solid:
             f.read(80)
             n=struct.unpack("L",f.read(4))[0]
             for i in xrange(n):
-                data=struct.unpack("12f1H",f.read(50))
-                normal=data[0:3]
-                v1=data[3:6]
-                v2=data[6:9]
-                v3=data[9:12]
-                self.facets.append(facet(v1,v2,v3))
+                facetdata=f.read(50)
+                try:
+                    data=struct.unpack("12f1H",facetdata)
+                    normal=data[0:3]
+                    v1=data[3:6]
+                    v2=data[6:9]
+                    v3=data[9:12]
+                    self.facets.append(facet(v1,v2,v3))
+                except:
+                    print "ERROR REPORT"
+                    print [ord(c) for c in facetdata]
+                    print "facet number:",i
+                    print "facet count:", n
+                    
 
     def getBounds(self):
         p1=list(self.facets[0][0])
