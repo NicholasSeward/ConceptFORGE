@@ -66,7 +66,7 @@ class solid:
             f.close()
             f=file(filename,"rb")
             f.read(80)
-            n=struct.unpack("L",f.read(4))[0]
+            n=struct.unpack("I",f.read(4))[0]
             for i in xrange(n):
                 facetdata=f.read(50)
                 try:
