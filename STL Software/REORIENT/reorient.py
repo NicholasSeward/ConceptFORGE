@@ -172,11 +172,11 @@ class solid:
         else:
             f=file(filename,"wb")
             f.write(("STLB "+filename).ljust(80))
-            f.write(struct.pack("L",len(self.facets)))
+            f.write(struct.pack("I",len(self.facets)))
             for face in self.facets:
                 nx,ny,nz=face.get_normal()
                 (x1,y1,z1),(x2,y2,z2),(x3,y3,z3)=face
-                f.write(struct.pack("ffffffffffffH",nx,ny,nz,x1,y1,z1,x2,y2,z2,x3,y3,z3,0))
+                f.write(struct.pack("12f1H",nx,ny,nz,x1,y1,z1,x2,y2,z2,x3,y3,z3,0))
             f.close
 
 
