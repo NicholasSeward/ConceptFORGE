@@ -213,8 +213,9 @@ def getBestOrientation(s):
 
 solids=glob.glob("*.stl")
 for sname in solids:
-    print "Processing:",sname
-    s=solid(sname)
-    getBestOrientation(s)
-    s.save("mod_"+sname)
+    if sname[:4]!="mod_":
+        print "Processing:",sname
+        s=solid(sname)
+        getBestOrientation(s)
+        s.save("mod_"+sname)
 
