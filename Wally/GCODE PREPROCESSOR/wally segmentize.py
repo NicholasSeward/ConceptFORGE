@@ -1,20 +1,15 @@
-##A work in progress!!!
-
-
 import math,copy,turtle
 
-front_z=151.6
-back_z=150.8
+front_z=152.0
+back_z=151.5
 square_z=75
 l=150
 L=250
 d=200 #print diameter
 y_offset=37.5
-mechanical_advantage=80/15.0
+mechanical_advantage=9.5
 
-print
-f=file(raw_input("Input File: "))
-coord={"X":0,"Y":0,"Z":0, "E":0, "F":0}
+
 
 front_z=float(front_z)
 back_z=float(back_z)
@@ -26,7 +21,7 @@ y_offset=float(y_offset)
 mechanical_advantage=float(mechanical_advantage)
 def testcode(x,y,z):
     a,b,c=transform(x,y,z)
-    return "G1 X"+str(a)+" Y"+str(b)+" Z"+str(c)+" F900"
+    return "G1 X"+str(a)+" Y"+str(b)+" Z"+str(c)+" F9000"
 
 """def transform(x,y,z):
     initial_angle=math.acos(L/2/l/2)
@@ -55,7 +50,7 @@ def transform(x,y,z):
     initial_angle=math.acos(L/(4*l))#
     bed_angle=math.asin((z-square_z)/l)#
     leg_offset=l*math.cos(bed_angle)
-    yprime=y-y_offset-leg_offset
+    yprime=y+y_offset-leg_offset
     xprime=x+L/2
     topz=((d/2-y)/d)*front_z+(1-(d/2-y)/d)*back_z
     bed_tilt=math.atan2(-back_z+front_z,d)
@@ -71,8 +66,8 @@ def transform(x,y,z):
     right_virtual=math.atan(-yprime/(L-xprime))
     left_drive=left_small_angle+left_virtual-initial_angle
     right_drive=right_small_angle+right_virtual-initial_angle
-    left_stepper=left_drive+(math.pi-left_elbow)*mechanical_advantage
-    right_stepper=right_drive+(math.pi-right_elbow)*mechanical_advantage
+    left_stepper=-left_drive+(math.pi-left_elbow)*mechanical_advantage
+    right_stepper=-right_drive+(math.pi-right_elbow)*mechanical_advantage
     #print "left_angle: "+str(left_drive)+" left_elbow: "+str(math.pi-left_elbow)
     #print "right_angle: "+str(left_drive)+" right_elbow: "+str(math.pi-right_elbow)
     return left_stepper*200/math.pi,right_stepper*200/math.pi,zprime
@@ -129,10 +124,13 @@ def segmentize(start,end,maxLength):
         return output
             
     
-
+print testcode(0,0,0)
+f=file(raw_input("Input File: "))
+coord={"X":0,"Y":0,"Z":0, "E":0, "F":0}
 prefixes="MGXYZESF"
 commands="MG"
 f2=file(raw_input("Output File: "),"w")
+f2.write("G92 X0 Y0 Z0 E0\n")
 program=[]
 move_count=0
 for line in f:
@@ -157,7 +155,7 @@ for line in f:
     if move_count<=3 and len(stuff)>0:
         program+=[stuff]
     elif len(stuff)>0:
-        segments=segmentize(coord,stuff,3)
+        segments=segmentize(coord,stuff,1)
         program+=segments
     for c in coord:
         if c in stuff:
