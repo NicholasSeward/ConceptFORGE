@@ -1,0 +1,37 @@
+What to print:
+==============
+STL files are located in the STLs/ directory
+
+Quantity can be found in the wally.pdf file
+
+Image previews and quantity can be found on the RepRap Wally page:
+
+http://reprap.org/wiki/Wally#Printed_Parts
+
+There are currently no platters or recommended groups of parts to print
+at the same time.  If you create platters for various sized print beds,
+feel free to share.
+
+
+Slicing:
+========
+
+Recommended settings for all parts:
+
+0.3mm layer thickness
+3 perimeters
+3 top/bottom layers (or apx. 1 mm)
+15% infill
+
+All parts should be printed as oriented in the STL file.  This means
+the "xy forearm" must be printed with support.  All other files are 
+printable without support.
+
+
+Printing Tips:
+==============
+
+At least a heated bed is required to avoid warped parts, and hair spray, 
+blue tape, PVA glue slurry, or other options to improve adhesion may
+also prove useful.
+
