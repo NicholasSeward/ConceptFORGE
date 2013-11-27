@@ -14,51 +14,58 @@ or grouped into platters if you trust your printer with what could be
 a very long print.  The smaller parts (partiticularly the nuts and 
 washers) should be grouped and printed together for best results, 
 
-There are currently no platters or recommended groups of parts to print
-at the same time.  If you create platters for various sized print beds,
-feel free to share.
+One suggested way of plating the parts is listed below.  Most parts are
+printed individually or two-up, with the smaller parts grouped into
+three plates: A, B, and C.  You may wish to slice the parts on plate
+C with less than the recommended 0.3mm layer height, as it can improve 
+the quality of the printed nuts and screws.
 
-Parts to Print                                                  Unit    Unit    Total   Total
-                                                                Time*   Mass*   Time*   Mass*
-Qty Filename (in STLs/ dir)     Notes   BOM Part Name           hh:mm   grams   hh:mm   grams
----------------------------------------------------------------------------------------------
- 1  bed bracket right_MIR.stl           Left Bed Bracket        02:10     60    02:10     60
- 1  bed bracket right.stl               Right Bed Bracket       02:10     60    02:10     60
- 2  big pulley.stl                      Big Pully               03:35     74    07:10    148
- 1  bowden nut.stl                      Bowden Nut              00:15      5    00:15      5
- 2  corner tab.stl                      Corner Tab              00:19      7    00:38     14
- 2  edge tab.stl                        Edge Tab                00:16      5    00:32     10
- 1  filament drive mount.stl            Filament Drive Mount    00:57     22    00:57     22
- 1  hub screw.stl                       Hub Screw               00:37      9    00:37      9
- 1  hub washer.stl                      Hub Washer              00:01     <1    00:01      0
- 1  lock nut.stl                        Lock Nut                00:10      3    00:10      3
- 4  plastic washer.stl                  Bed Washers             00:01     <1    00:04      1
- 1  spool holder.stl                    Spool Holder            01:33     30    01:33     30
- 1  standoff.stl                        Standoff                00:31      8    00:31      8
- 2  string tensioner.stl                String Tensioner        00:13      4    00:26      8
- 1  xy forearm.stl               [1]    XY Forearm              02:22     66    02:22     66
- 2  xy mount.stl                        XY Mount                01:34     26    03:08     52
- 2  xy pulley.stl                       XY Pully                00:17      4    00:34      7
- 1  xy ubis mount arm.stl               Hot End Arm             01:50     52    01:50     52
- 6  xy wall arm.stl                     Arm                     01:53     48    11:18    288
- 2  z arm wall bracket.stl              Z Arm Wall Bracket      01:06     28    02:12     56
- 1  z idler.stl                         Z Idler                 00:05      1    00:05      1
- 1  z motor mount.stl                   Z Motor Mount           00:53     19    00:53     19
- 1  z pulley holder.stl                 Bed Pully Holder        00:25      8    00:25      8
- 1  z pulley.stl                        Z Pully                 00:16      3    00:13      3
----------------------------------------------------------------------------------------------
-                                                                Grand Total     40:14    930
+Parts to Print                                                          Unit    Unit    Total   Total
+                                        Plate                           Time*   Mass*   Time*   Mass*
+Qty Filename (in STLs/ dir)     Notes     (qty) BOM Part Name           hh:mm   grams   hh:mm   grams
+-----------------------------------------------------------------------------------------------------
+ 1  bed bracket right_MIR.stl           1x      Left Bed Bracket        02:10     60    02:10     60
+ 1  bed bracket right.stl               1x      Right Bed Bracket       02:10     60    02:10     60
+ 2  big pulley.stl                      1x (2)  Big Pully               03:35     74    07:10    148
+ 1  bowden nut.stl               [2]    C       Bowden Nut              00:15      5    00:15      5
+ 2  corner tab.stl                      A       Corner Tab              00:19      7    00:38     14
+ 2  edge tab.stl                        A       Edge Tab                00:16      5    00:32     10
+ 1  filament drive mount.stl            B       Filament Drive Mount    00:57     22    00:57     22
+ 1  hub screw.stl                [2]    C       Hub Screw               00:37      9    00:37      9
+ 1  hub washer.stl                      A       Hub Washer              00:01     <1    00:01      0
+ 1  lock nut.stl                 [2]    C       Lock Nut                00:10      3    00:10      3
+ 4  plastic washer.stl                  A       Bed Washers             00:01     <1    00:04      1
+ 1  spool holder.stl                    1x      Spool Holder            01:33     30    01:33     30
+ 1  standoff.stl                        1x      Standoff                00:31      8    00:31      8
+ 2  string tensioner.stl                A       String Tensioner        00:13      4    00:26      8
+ 1  xy forearm.stl               [1]    1x      XY Forearm              02:22     66    02:22     66
+ 2  xy mount.stl                        2x      XY Mount                01:34     26    03:08     52
+ 2  xy pulley.stl                [2]    C       XY Pully                00:17      4    00:34      7
+ 1  xy ubis mount arm.stl               1x      Hot End Arm             01:50     52    01:50     52
+ 6  xy wall arm.stl                     2x (3)  Arm                     01:53     48    11:18    288
+ 2  z arm wall bracket.stl              2x      Z Arm Wall Bracket      01:06     28    02:12     56
+ 1  z idler.stl                         A       Z Idler                 00:05      1    00:05      1
+ 1  z motor mount.stl                   B       Z Motor Mount           00:53     19    00:53     19
+ 1  z pulley holder.stl                 B       Bed Pully Holder        00:25      8    00:25      8
+ 1  z pulley.stl                 [2]    C       Z Pully                 00:16      3    00:13      3
+-----------------------------------------------------------------------------------------------------
+                                                                        Grand Total     40:14    930
 
 NOTES:
 [1] The XY Forearm requires printing with support.  Mass values include
 the support material (as generated by Slic3r 1.0.0RC1 default settings)
 
+[2] You may wish to print these parts with a layer thickness less than
+the 0.3mm recommended for all other parts.
+
 * Time and Mass are approximate.  Values listed were measured by Charles 
-Steinkuehler.  Exact print time and part mass will depend on your 
+Steinkuehler using a 0.5mm nozzle and honeycomb infill (both of which 
+affect part weight).  Exact print time and part mass will depend on your 
 particular printer, filament, platter arrangement, retraction, and 
 slicing settings.  Shane Graber reports a total mass for all parts of 
-820g (including support), so there is obviously variation based on your 
-filament and slicing settings.
+820g (including support) using an 0.4mm nozzle and rectilinear infill, 
+so there is obviously variation based on your printer, filament, and 
+slicing settings.
 
 
 Slicing:
@@ -69,7 +76,7 @@ Recommended settings for all parts:
 0.3mm layer thickness
 3 perimeters
 3 top/bottom layers (or apx. 1 mm)
-15% infill
+15% rectilinear infill
 Inside perimeters first
 
 All parts should be printed as oriented in the STL file.  This means
