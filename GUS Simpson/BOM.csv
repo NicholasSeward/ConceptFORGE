@@ -1,92 +1,46 @@
-QTY	ITEM	MATERIAL	NOTES	VOLUME	SOURCE	PART #	LINK
-
-1	BOTTOM PLATE	1/2 INCH FLATSTOCK		665696.936 mm^3			
-
-1	TOP PLATE	1/2 INCH FLATSTOCK		620989.605 mm^3			
-
-1	BASALT BED	BASALT		516236.765 mm^3			
-
-3	SHOULDER	PLA		95960.308 mm^3			
-
-3	PLASTIC WASHER	PLA		145.644 mm^3			
-
-3	MOTOR ARM	PLA		156075.916 mm^3			
-
-3	PULLEY	PLA		2825.177 mm^3			
-
-1	HUB BOTTOM	PLA		58445.393 mm^3			
-
-1	HOT CENTER	PLA		35496.645 mm^3			
-
-1	HUB WASHER	PLA		113.086 mm^3			
-
-1	HUB TOP	PLA		45030.490 mm^3			
-
-1	LOCK NUT	PLA		2179.019 mm^3			
-
-1	BOWDEN NUT	PLA		4428.572 mm^3			
-
-3	SLAVE ARM	PLA		180181.836 mm^3			
-
-3	ECCENTRIC STOP	PLA		454.113 mm^3			
-
-1	STANDOFF	PLA		7266.169 mm^3			
-
-1	FILAMENT DRIVE BODY	PLA	NOT MODELED.  FOR NOW, YOU CAN SUBSTITUE ANY OTHER FILAMENT DRIVE.				
-
-1	BOWDEN TUBE	PTFE	4mm OD x 2mm ID x 24 inches				
-
-1	HOT BED	SILICONE			http://www.qu-bd.com/	CIRCULAR 24V SILICONE RUBBER HEATER BED 200MM DIAMETER (8 INCH)	http://store.qu-bd.com/product.php?id_product=59
-
-18	608 BEARING	STEEL		2309.071 mm^3			
-
-12	M8 WASHER	STEEL		220.434 mm^3			
-
-3	M8X100 HEX BOLT	STEEL		5848.615 mm^3			
-
-3	TUNING PEG	STEEL		5621.126 mm^3	http://www.amazon.com/	B00BJTGILG	http://amzn.com/B00BJTGILG
-
-3	M3X16 SHCS	STEEL		173.767 mm^3			
-
-9	M2X10 SHCS	STEEL		51.508 mm^3			
-
-12	M8X60 HEX BOLT	STEEL		3837.996 mm^3			
-
-6	M8X55 HEX BOLT	STEEL		3586.668 mm^3			
-
-12	M3X6 SHCS	STEEL		103.081 mm^3			
-
-6	M3X8	STEEL		117.218 mm^3			
-
-5	M3X20	STEEL		202.041 mm^3			
-
-4	6702 BEARING	STEEL		678.584 mm^3			
-
-2	M4 NUT	STEEL		107.865 mm^3			
-
-1	HOBBED PULLEY	STEEL			http://www.qu-bd.com/	MK7 *STAINLESS* FILAMENT DRIVE GEAR	http://store.qu-bd.com/product.php?id_product=142
-
-3	SPRING	STEEL			http://www.mcmaster.com	9654K108	http://www.mcmaster.com/#9654k108/=pkklz1
-
-33	M8 NYLOC STOP NUT	STEEL/NYLON		749.524 mm^3			
-
-2	M3 NYLOC STOP NUT	STEEL/NYLON		50.833 mm^3			
-
-1	UMHW BLOCK	UMHW	FOR DIRECT DRIVE FILAMENT DRIVE		http://www.qu-bd.com/	MBE EXTRUDER UMHW FILAMENT DRIVE BLOCK	http://store.qu-bd.com/product.php?id_product=28
-
-3	LIMIT SWITCH	VARIES		473.476 mm^3	http://www.mouser.com/	611-ZMA00A080L04PC	http://www.mouser.com/Search/ProductDetail.aspx?R=ZMA00A080L04PCvirtualkey61110000virtualkey611-ZMA00A080L04PC
-
-3	NEMA 17 STEPPER	VARIES		67718.266 mm^3	http://www.qu-bd.com/	NEMA 17 STEPPER MOTOR 4.5KG*CM	http://store.qu-bd.com/product.php?id_product=46
-
-1	ANUBIS HOT END	VARIES		11631.524 mm^3	http://www.qu-bd.com/	ANUBIS 24V HEATER CARTRIDGE KIT	http://store.qu-bd.com/product.php?id_product=137
-
-1	POWER SUPPLY	VARIES			http://www.qu-bd.com/	350W POWER SUPPLY 14.6A @ 24V POWER SUPPLY	http://store.qu-bd.com/product.php?id_product=111
-
-1	CONTROLLER				http://www.qu-bd.com/	AZTEEG X1 - 'RAMPS ON STEROIDS'	http://store.qu-bd.com/product.php?id_product=53
-
-1	STEPPER DRIVER				http://www.qu-bd.com/	SURESTEPR SUPER PREMIUM STEPPER DRIVERS	http://store.qu-bd.com/product.php?id_product=55
-
-	STRING		80lb+ TEST BRAIDED FISHING LINE				
-
-	WIRE		FOR LIMIT SWITCHES AND HOT END				
-
+QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
+1,BOTTOM PLATE,1/2 INCH FLATSTOCK,,665696.936 mm^3,,,
+1,TOP PLATE,1/2 INCH FLATSTOCK,,620989.605 mm^3,,,
+1,BASALT BED,BASALT,,516236.765 mm^3,,,
+3,SHOULDER,PLA,,95960.308 mm^3,,,
+3,PLASTIC WASHER,PLA,,145.644 mm^3,,,
+3,MOTOR ARM,PLA,,156075.916 mm^3,,,
+3,PULLEY,PLA,,2825.177 mm^3,,,
+1,HUB BOTTOM,PLA,,58445.393 mm^3,,,
+1,HOT CENTER,PLA,,35496.645 mm^3,,,
+1,HUB WASHER,PLA,,113.086 mm^3,,,
+1,HUB TOP,PLA,,45030.490 mm^3,,,
+1,LOCK NUT,PLA,,2179.019 mm^3,,,
+1,BOWDEN NUT,PLA,,4428.572 mm^3,,,
+3,SLAVE ARM,PLA,,180181.836 mm^3,,,
+3,ECCENTRIC STOP,PLA,,454.113 mm^3,,,
+1,STANDOFF,PLA,,7266.169 mm^3,,,
+1,FILAMENT DRIVE BODY,PLA,"NOT MODELED.  FOR NOW, YOU CAN SUBSTITUE ANY OTHER FILAMENT DRIVE.",,,,
+1,BOWDEN TUBE,PTFE,4mm OD x 2mm ID x 24 inches,,,,
+1,HOT BED,SILICONE,,,http://www.qu-bd.com/,"CIRCULAR 24V SILICONE RUBBER HEATER BED 200MM DIAMETER (8"")",http://store.qu-bd.com/product.php?id_product=59
+18,608 BEARING,STEEL,,2309.071 mm^3,,,
+12,M8 WASHER,STEEL,,220.434 mm^3,,,
+3,M8X100 HEX BOLT,STEEL,,5848.615 mm^3,,,
+3,TUNING PEG,STEEL,,5621.126 mm^3,http://www.amazon.com/,B00BJTGILG,http://amzn.com/B00BJTGILG
+3,M3X16 SHCS,STEEL,,173.767 mm^3,,,
+9,M2X10 SHCS,STEEL,,51.508 mm^3,,,
+12,M8X60 HEX BOLT,STEEL,,3837.996 mm^3,,,
+6,M8X55 HEX BOLT,STEEL,,3586.668 mm^3,,,
+12,M3X6 SHCS,STEEL,,103.081 mm^3,,,
+6,M3X8,STEEL,,117.218 mm^3,,,
+5,M3X20,STEEL,,202.041 mm^3,,,
+4,6702 BEARING,STEEL,,678.584 mm^3,,,
+2,M4 NUT,STEEL,,107.865 mm^3,,,
+1,HOBBED PULLEY,STEEL,,,http://www.qu-bd.com/,MK7 *STAINLESS* FILAMENT DRIVE GEAR,http://store.qu-bd.com/product.php?id_product=142
+3,SPRING,STEEL,,,http://www.mcmaster.com,9654K108,http://www.mcmaster.com/#9654k108/=pkklz1
+33,M8 NYLOC STOP NUT,STEEL/NYLON,,749.524 mm^3,,,
+2,M3 NYLOC STOP NUT,STEEL/NYLON,,50.833 mm^3,,,
+1,UMHW BLOCK,UMHW,FOR DIRECT DRIVE FILAMENT DRIVE,,http://www.qu-bd.com/,MBE EXTRUDER UMHW FILAMENT DRIVE BLOCK,http://store.qu-bd.com/product.php?id_product=28
+3,LIMIT SWITCH,VARIES,,473.476 mm^3,http://www.mouser.com/,611-ZMA00A080L04PC,http://www.mouser.com/Search/ProductDetail.aspx?R=ZMA00A080L04PCvirtualkey61110000virtualkey611-ZMA00A080L04PC
+3,NEMA 17 STEPPER,VARIES,,67718.266 mm^3,http://www.qu-bd.com/,NEMA 17 STEPPER MOTOR 4.5KG*CM,http://store.qu-bd.com/product.php?id_product=46
+1,ANUBIS HOT END,VARIES,,11631.524 mm^3,http://www.qu-bd.com/,ANUBIS 24V HEATER CARTRIDGE KIT,http://store.qu-bd.com/product.php?id_product=137
+1,POWER SUPPLY,VARIES,,,http://www.qu-bd.com/,350W POWER SUPPLY 14.6A @ 24V POWER SUPPLY,http://store.qu-bd.com/product.php?id_product=111
+1,CONTROLLER,,,,http://www.qu-bd.com/,AZTEEG X1 - 'RAMPS ON STEROIDS',http://store.qu-bd.com/product.php?id_product=53
+1,STEPPER DRIVER,,,,http://www.qu-bd.com/,SURESTEPR SUPER PREMIUM STEPPER DRIVERS,http://store.qu-bd.com/product.php?id_product=55
+,STRING,,80lb+ TEST BRAIDED FISHING LINE,,,,
+,WIRE,,FOR LIMIT SWITCHES AND HOT END,,,,
