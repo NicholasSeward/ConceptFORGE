@@ -37,10 +37,10 @@ QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
 2,M3 NYLOC STOP NUT,STEEL/NYLON,,50.833 mm^3,,,
 1,UMHW BLOCK,UMHW,FOR DIRECT DRIVE FILAMENT DRIVE,,http://www.qu-bd.com/,MBE EXTRUDER UMHW FILAMENT DRIVE BLOCK,http://store.qu-bd.com/product.php?id_product=28
 3,LIMIT SWITCH,VARIES,,473.476 mm^3,http://www.mouser.com/,611-ZMA00A080L04PC,http://www.mouser.com/Search/ProductDetail.aspx?R=ZMA00A080L04PCvirtualkey61110000virtualkey611-ZMA00A080L04PC
-3,NEMA 17 STEPPER,VARIES,,67718.266 mm^3,http://www.qu-bd.com/,NEMA 17 STEPPER MOTOR 4.5KG*CM,http://store.qu-bd.com/product.php?id_product=46
+4,NEMA 17 STEPPER,VARIES,,67718.266 mm^3,http://www.qu-bd.com/,NEMA 17 STEPPER MOTOR 4.5KG*CM,http://store.qu-bd.com/product.php?id_product=46
 1,ANUBIS HOT END,VARIES,,11631.524 mm^3,http://www.qu-bd.com/,ANUBIS 24V HEATER CARTRIDGE KIT,http://store.qu-bd.com/product.php?id_product=137
 1,POWER SUPPLY,VARIES,,,http://www.qu-bd.com/,350W POWER SUPPLY 14.6A @ 24V POWER SUPPLY,http://store.qu-bd.com/product.php?id_product=111
 1,CONTROLLER,,,,http://www.qu-bd.com/,AZTEEG X1 - 'RAMPS ON STEROIDS',http://store.qu-bd.com/product.php?id_product=53
-1,STEPPER DRIVER,,,,http://www.qu-bd.com/,SURESTEPR SUPER PREMIUM STEPPER DRIVERS,http://store.qu-bd.com/product.php?id_product=55
+4,STEPPER DRIVER,,,,http://www.qu-bd.com/,SURESTEPR SUPER PREMIUM STEPPER DRIVERS,http://store.qu-bd.com/product.php?id_product=55
 ,STRING,,80lb+ TEST BRAIDED FISHING LINE,,,,
 ,WIRE,,FOR LIMIT SWITCHES AND HOT END,,,,
