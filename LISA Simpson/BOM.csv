@@ -1,0 +1,47 @@
+QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
+1,BOTTOM PLATE,1/2 INCH FLATSTOCK,,1440951.107 mm^3,,,
+1,MID PLATE,1/2 INCH FLATSTOCK,,1343562.607 mm^3,,,
+1,TOP PLATE,1/2 INCH FLATSTOCK,,1296110.031 mm^3,,,
+3,LONG PIPE,"2"" SCHEDULE 40 PVC",21.75in,28.026 in^3,,,
+3,SHORT PIPE,"2"" SCHEDULE 40 PVC",3.25in,4.188 in^3,,,
+1,BASALT,BASALT,CUSTOM WATER JET CUT 3/8in BASALT,516236.765 mm^3,,,
+3,LEAD NUT,LOW FRICTION PLASTIC,,11671.851 mm^3,http://www.roton.com,"Anti-Backlash Nut, 7/16 X 1.000 Right Hand Torqspline",http://www.roton.com/Mating_Components.aspx?family=7059785
+12,ALIGNER,PLA,,0.183 in^3,,,
+3,ARM,PLA,,125684.461 mm^3,,,
+3,BOTTOM NUT,PLA,,0.581 in^3,,,
+1,BOWDEN NUT,PLA,,4428.572 mm^3,,,
+3,COUPLER,PLA,,12199.790 mm^3,,,
+1,FILAMENT DRIVE BODY,PLA,"NOT MODELED.  FOR NOW, YOU CAN SUBSTITUE ANY OTHER FILAMENT DRIVE.",,,,
+3,GUIDE,PLA,,0.950 in^3,,,
+1,HUB BOTTOM,PLA,,56732.383 mm^3,,,
+1,HUB CENTER,PLA,,34714.973 mm^3,,,
+1,HUB TOP,PLA,,43281.775 mm^3,,,
+1,LOCK NUT,PLA,,2179.019 mm^3,,,
+3,PLASTIC WASHER,PLA,,145.644 mm^3,,,
+3,SHOULDER,PLA,,37767.071 mm^3,,,
+1,STANDOFF,PLA,,7266.949 mm^3,,,
+3,THREAD CLAMP,PLA,,4866.907 mm^3,,,
+3,TOP NUT,PLA,,0.418 in^3,,,
+1,BOWDEN TUBE,PTFE,4mm OD x 2mm ID x 24 inches,,,,
+1,HOT BED,SILICONE,,,http://www.qu-bd.com/,"CIRCULAR 24V SILICONE RUBBER HEATER BED 200MM DIAMETER (8"")",http://store.qu-bd.com/product.php?id_product=59
+6,1607 BEARING,STEEL,"10 Bearing 1607ZZ 7/16""x29/32""x5/16"" inch Shielded Ball Bearings",0.155 in^3,http://www.vxb.com/,kit957,http://www.vxb.com/page/bearings/PROD/kit957
+12,608 BEARING,STEEL,,2309.071 mm^3,,,
+4,6702,STEEL,,678.584 mm^3,,,
+3,7_16 TORQSPLINE,STEEL,,2.901 in^3,http://www.roton.com,"Screw, 7/16 X 1.000 Right Hand Torqspline",http://www.roton.com/Mating_Components.aspx?family=7059785
+1,HUB WASHER,STEEL,,113.086 mm^3,,,
+29,M3 NYLOC STOP NUT,STEEL,,59.585 mm^3,,,
+18,M3X16,STEEL,,173.767 mm^3,,,
+2,M3x20,STEEL,,202.041 mm^3,,,
+9,M3X35,STEEL,,308.070 mm^3,,,
+15,M8 NYLOC STOP NUT,STEEL,,982.034 mm^3,,,
+3,M8 TENSION THREAD,STEEL,"M8 THREADED ROD 27.75""",2.163 in^3,,,
+6,M8 WASHER,STEEL,,222.378 mm^3,,,
+3,M8x35,STEEL,,2581.358 mm^3,,,
+6,M8X55,STEEL,,3586.668 mm^3,,,
+1,UMHW BLOCK,UMHW,FOR DIRECT DRIVE FILAMENT DRIVE,,http://www.qu-bd.com/,MBE EXTRUDER UMHW FILAMENT DRIVE BLOCK,http://store.qu-bd.com/product.php?id_product=28
+1,UMHW BLOCK,UMHW,FOR DIRECT DRIVE FILAMENT DRIVE,,http://www.qu-bd.com/,MBE EXTRUDER UMHW FILAMENT DRIVE BLOCK,http://store.qu-bd.com/product.php?id_product=28
+1,ANUBIS HOT END,VARIES,,11631.524 mm^3,http://www.qu-bd.com/,ANUBIS 24V HEATER CARTRIDGE KIT,http://store.qu-bd.com/product.php?id_product=137
+4,NEMA 17 STEPPER,VARIES,,67718.266 mm^3,,,
+1,POWER SUPPLY,VARIES,,,http://www.qu-bd.com/,350W POWER SUPPLY 14.6A @ 24V POWER SUPPLY,http://store.qu-bd.com/product.php?id_product=111
+1,CONTROLLER,,,,http://www.qu-bd.com/,AZTEEG X1 - 'RAMPS ON STEROIDS',http://store.qu-bd.com/product.php?id_product=53
+4,STEPPER DRIVER,,,,http://www.qu-bd.com/,SURESTEPR SUPER PREMIUM STEPPER DRIVERS,http://store.qu-bd.com/product.php?id_product=55
