@@ -2,7 +2,7 @@ import math,copy,turtle
 
 front_z=152.0
 back_z=151.5
-square_z=75
+square_z=75 #the z height where the bed arms are at 90 degrees
 l=150
 L=250
 d=200 #print diameter
