@@ -44,7 +44,7 @@ def getABC(position1):
     position['X']=a2
     position['Y']=b2
     position['Z']=c2
-    position['F']=fnew*2
+    position['F']=fnew
     return position
 
 
