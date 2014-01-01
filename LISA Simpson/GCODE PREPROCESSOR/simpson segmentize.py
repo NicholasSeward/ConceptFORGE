@@ -87,7 +87,7 @@ def segmentize(start,end,maxLength):
 prefixes="MGXYZESF"
 commands="MG"
 f2=file(raw_input("Output File: "),"w")
-f2.write("G92 X"+str(start_positions[0])+" Y"+str(start_positions[1])+" Z"+str(start_positions[2])+"\n")
+f2.write("G92 X"+str(start_positions[0])+" Y"+str(start_positions[1])+" Z"+str(start_positions[2])+"E0\n")
 program=[]
 move_count=0
 for line in f:
