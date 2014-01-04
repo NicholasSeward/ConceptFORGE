@@ -1,7 +1,7 @@
 import math,copy
 
 """PARAMETERS"""
-shoulder_offset=25
+shoulder_offset=37.5
 hub_offset=50
 arm_length=200
 screw_spacing=300
