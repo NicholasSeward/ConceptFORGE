@@ -1,12 +1,12 @@
 import math,copy
 
 """PARAMETERS"""
-shoulder_offset=37.5
+shoulder_offset=25
 hub_offset=50
 arm_length=200
 screw_spacing=300
 screw_angles=[150,270,30]
-start_positions=[253.25,253.25,253.25] #G92 X253.75 Y253.75 Z253.75
+start_positions=[253.2,252.9,253.2] #G92 X253.75 Y253.75 Z253.75
 
 delta_radius=screw_spacing/3.0*math.sqrt(3)
 screw_positions=[(delta_radius*math.cos(math.pi*screw_angles[i]/180.0),delta_radius*math.sin(math.pi*screw_angles[i]/180.0)) for i in range(3)]
@@ -32,12 +32,12 @@ def getABC(position1):
     if "X" not in position1:
         return position1
     position=copy.deepcopy(position1)
-    d=distance(coord,position)
     xs,ys,zs=coord["X"],coord["Y"],coord["Z"]
     x,y,z,f=position["X"],position["Y"],position["Z"],position["F"]
     a1,b1,c1=transform(xs,ys,zs)
     a2,b2,c2=transform(x,y,z)
     virtual_d=math.sqrt((a1-a2)**2+(b1-b2)**2+(c1-c2)**2)
+    d=math.sqrt((x-xs)**2+(y-ys)**2+(z-zs)**2)
     fnew=f
     if d!=0:
         fnew=f*virtual_d/d
@@ -87,7 +87,7 @@ def segmentize(start,end,maxLength):
 prefixes="MGXYZESF"
 commands="MG"
 f2=file(raw_input("Output File: "),"w")
-f2.write("G92 X"+str(start_positions[0])+" Y"+str(start_positions[1])+" Z"+str(start_positions[2])+"E0\n")
+f2.write("G92 X"+str(start_positions[0])+" Y"+str(start_positions[1])+" Z"+str(start_positions[2])+" E0\n")
 program=[]
 move_count=0
 for line in f:
