@@ -1,0 +1,1 @@
+This filament drive is not the best but it is a pretty good direct drive setup.  It is meant to interface with Wally, GUS, and LISA.  There are special brackets for each included.
