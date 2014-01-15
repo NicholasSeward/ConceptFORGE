@@ -16,7 +16,9 @@ QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
 3,SLAVE ARM,PLA,,180181.836 mm^3,,,
 3,ECCENTRIC STOP,PLA,,454.113 mm^3,,,
 1,STANDOFF,PLA,,7266.169 mm^3,,,
-1,FILAMENT DRIVE BODY,PLA,"NOT MODELED.  FOR NOW, YOU CAN SUBSTITUE ANY OTHER FILAMENT DRIVE.",,,,
+1,FILAMENT DRIVE-ARM,PLA,,,,,
+1,FILAMENT DRIVE-BLOCK,PLA,,,,,
+2,FILAMENT DRIVE-SPRING,PLA,,,http://www.mcmaster.com/,"Steel Compression Spring, Zinc-Plated Music Wire,.500"" L,.187"" OD,.029"" Wire",http://www.mcmaster.com/#9657K268
 1,BOWDEN TUBE,PTFE,4mm OD x 2mm ID x 24 inches,,,,
 1,HOT BED,SILICONE,,,http://www.qu-bd.com/,"CIRCULAR 24V SILICONE RUBBER HEATER BED 200MM DIAMETER (8"")",http://store.qu-bd.com/product.php?id_product=59
 18,608 BEARING,STEEL,,2309.071 mm^3,,,
@@ -36,7 +38,6 @@ QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
 3,SPRING,STEEL,,,http://www.mcmaster.com,9654K108,http://www.mcmaster.com/#9654k108/=pkklz1
 33,M8 NYLOC STOP NUT,STEEL/NYLON,,749.524 mm^3,,,
 2,M3 NYLOC STOP NUT,STEEL/NYLON,,50.833 mm^3,,,
-1,UMHW BLOCK,UMHW,FOR DIRECT DRIVE FILAMENT DRIVE,,http://www.qu-bd.com/,MBE EXTRUDER UMHW FILAMENT DRIVE BLOCK,http://store.qu-bd.com/product.php?id_product=28
 3,LIMIT SWITCH,VARIES,,473.476 mm^3,http://www.mouser.com/,611-ZMA00A080L04PC,http://www.mouser.com/Search/ProductDetail.aspx?R=ZMA00A080L04PCvirtualkey61110000virtualkey611-ZMA00A080L04PC
 4,NEMA 17 STEPPER,VARIES,,67718.266 mm^3,http://www.qu-bd.com/,NEMA 17 STEPPER MOTOR 4.5KG*CM,http://store.qu-bd.com/product.php?id_product=46
 1,ANUBIS HOT END,VARIES,,11631.524 mm^3,http://www.qu-bd.com/,ANUBIS 24V HEATER CARTRIDGE KIT,http://store.qu-bd.com/product.php?id_product=137
