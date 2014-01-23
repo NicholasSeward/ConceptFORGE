@@ -164,7 +164,7 @@ ap,bp,cp,dp=refPlane()
 #print machine2reference((1000,1000,100))
 #print reference2machine((125,125,100))
 def actual2reference((x,y,z)):
-    bed_angle=math.asin((z-square_z)/l)
+    bed_angle=math.asin((z-interpolate2(square_z))/l)
     leg_offset=l*math.cos(bed_angle)
     yprime=y+y_offset-leg_offset
     xprime=x+L/2
