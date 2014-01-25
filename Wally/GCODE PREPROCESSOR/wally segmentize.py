@@ -17,7 +17,7 @@ except:
     sys.exit()
 
 #various machine coordinate sets where the effector barely touches the bed
-touch_points=[(1000,1000,149.6),(1300,1300,150.5),(800,1400,150.1),(1400,800,150.3),(1200,1200,150.3)] 
+touch_points=[(820,720,149.90),(820,1370,150.5),(1370,820,151),(1200,1200,150.9),(1350,3600,151.40)] 
 
 #CALIBRATION DATA FOR THE BED HEIGHT
 z_machine_actual=[(1,0.08),(2,0.84),(3,1.76),(4,2.68),
@@ -73,7 +73,7 @@ L=250
 y_offset=37.5
 
 #Using "G1 X? Y?" to find the machine coordinates that make the arms colinear
-straight_forearms=1021 
+straight_forearms=996 
 
 
 machine_z=numpy.array([i for i,j in z_machine_actual])
@@ -97,7 +97,7 @@ def interpolate2(v,leftLookup=True):
             f = scipy.interpolate.interp1d(x, y)#, kind='cubic')
         else:
             f = scipy.interpolate.interp1d(y,x)
-        return f(v)
+        return float(f(v))
     except:
         return 0
 
@@ -123,7 +123,7 @@ def machine2reference((x,y,z)):
     def func((i,j)):
         (x2,y2,z2)=reference2machine((i,j,0))
         return (x-x2)**2+(y-y2)**2
-    xprime,yprime=scipy.optimize.fmin(func,(100,-100),disp=False)
+    xprime,yprime=scipy.optimize.fmin(func,(100,-100), xtol=0.000001, ftol=0.000001,disp=False)
     return xprime,yprime,zprime
     
 def reference2machine((x,y,z)):
@@ -147,11 +147,11 @@ def reference2machine((x,y,z)):
         return 0,0,0
 
 def refPlane():
+    ref_points=[(machine2reference(p)) for p in touch_points]
+    #print ref_points
     def func((a,b,c,d)):
         v=0
-        for p in touch_points:
-            x,y,z=machine2reference(p)
-            #print x,y,z
+        for x,y,z in ref_points:
             v+=(a*x+b*y+c*z+d)**2
         return v
     a,b,c,d=scipy.optimize.fmin(func,(1,1,1,1),disp=False)
@@ -168,7 +168,8 @@ def actual2reference((x,y,z)):
     leg_offset=l*math.cos(bed_angle)
     yprime=y+y_offset-leg_offset
     xprime=x+L/2
-    zero_z=(-dp-ap*xprime+bp*yprime)/cp
+    zero_z=(-dp-ap*xprime-bp*yprime)/cp
+    #print xprime,yprime,zero_z
     zprime=zero_z-z
     return xprime,yprime,zprime
 #print actual2reference((0,0,0))
@@ -282,7 +283,7 @@ for line in f:
 for i in range(len(program)):
     line=program[i]
     if i%100==0:
-		print str(i*100.0/len(program))+"%"
+        print str(i*100.0/len(program))+"%"
     abcline=getABC(line)
     for letter in prefixes:
         if letter in abcline and letter in commands:
