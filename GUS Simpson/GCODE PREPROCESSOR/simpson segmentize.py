@@ -11,16 +11,20 @@
 #THE MORE THE BETTER.
 #EXPECT THE MACHINE TO NEED TO BE RECALIBRATED OFTEN AS
 #THE SYSTEM GETS WORKED IN.
-POINTS=[(183.6,100,100),
-        (100,184.1,100),
-        (100,100,182.7),
-        (133.4,133.4,133.4),
-        (207.5,75,75),
-        (75,207.9,75),
-        (75,75,206.7),
-        (146.2,146.2,100),
-        (100,145.7,145.7),
-        (145.6,100,145.6)]
+POINTS=[(167.3,96,125),
+        (96,167.5,125),
+        (96,125,166.5),
+        (167.3,125,96),
+        (125,167.5,96),
+        (125,96,166.2),
+        (189.2,56,107),
+        (190.8,107,56),
+        (56,189.8,107),
+        (107,191.2,56),
+        (56,107,188.7),
+        (107,56,189.5),
+        (133.2,133.2,133.1),
+        ]
 
 #DISTANCE FROM SHOULDER SCREW TO SHOULDER SCREW
 SIZE=250.0
@@ -32,7 +36,7 @@ BED_Z=70
 #APPROXIMATE MAX ACTUATED LENGTH OF ARM
 MAX_ARM_LENGTH=300
 
-#HOW SMALL SHOULD THE LINE SEGMENTS BE BROKEN DOWN TO.
+#HOW SMALL SHOULD THE LINE SEGMENTS BE BROKEN DOWN TO?
 #SMALL=BETTER QUALITY
 #LARGE=SMALLER FILE/FASTER
 SEGMENT_SIZE=1.0
@@ -151,9 +155,9 @@ def segmentize(start,end,maxLength):
         for i in range(1,n+1):
             output.append(interpolate(start,end,i,n))
         return output
-            
-    
 
+print getABC({"X":45,"Y":0,"Z":1,"F":123})
+print getABC({"X":90,"Y":0,"Z":1,"F":123})
 
 
 prefixes="MGXYZESF"
