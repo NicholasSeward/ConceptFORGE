@@ -3,7 +3,7 @@ What to print:
 STL files are located in the STLs/ directory.  Ignore the file names 
 that start with an underscore (ie: _M3x10.stl), as these are vitamins.
 
-See the wally.pdf file for the official BOM, which includes quantity
+See the bom.csv file for the official BOM, which includes quantity
 of the various printed parts.
 
 Image previews (and quantity) can be found on the RepRap Wally page:
