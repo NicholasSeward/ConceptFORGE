@@ -18,10 +18,11 @@ QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
 1,STANDOFF,PLA,,7266.169 mm^3,,,
 1,FILAMENT DRIVE-ARM,PLA,,,,,
 1,FILAMENT DRIVE-BLOCK,PLA,,,,,
+1,FILAMENT DRIVE-BEARING INSERT,PLA,,,,,
 2,FILAMENT DRIVE-SPRING,,,,http://www.mcmaster.com/,"Steel Compression Spring, Zinc-Plated Music Wire,.500"" L,.187"" OD,.029"" Wire",http://www.mcmaster.com/#9657K268
 1,BOWDEN TUBE,PTFE,4mm OD x 2mm ID x 24 inches,,,,
 1,HOT BED,SILICONE,,,http://www.qu-bd.com/,"CIRCULAR 24V SILICONE RUBBER HEATER BED 200MM DIAMETER (8"")",http://store.qu-bd.com/product.php?id_product=59
-18,608 BEARING,STEEL,,2309.071 mm^3,,,
+19,608 BEARING,STEEL,,2309.071 mm^3,,,
 12,M8 WASHER,STEEL,,220.434 mm^3,,,
 3,M8X100 HEX BOLT,STEEL,,5848.615 mm^3,,,
 3,TUNING PEG,STEEL,,5621.126 mm^3,http://www.amazon.com/,B00BJTGILG,http://amzn.com/B00BJTGILG
@@ -31,13 +32,16 @@ QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
 6,M8X55 HEX BOLT,STEEL,,3586.668 mm^3,,,
 12,M3X6 SHCS,STEEL,,103.081 mm^3,,,
 6,M3X8,STEEL,,117.218 mm^3,,,
-5,M3X20,STEEL,,202.041 mm^3,,,
+6,M3X20,STEEL,,202.041 mm^3,,,
+2,M3X25,STEEL,,,,,
+2,M3X30,STEEL,,,,,
+2,M3X35,STEEL,,,,,
 4,6702 BEARING,STEEL,,678.584 mm^3,,,
 2,M4 FULL NUT,STEEL,,107.865 mm^3,,,
 1,HOBBED PULLEY,STEEL,,,http://www.qu-bd.com/,MK7 *STAINLESS* FILAMENT DRIVE GEAR,http://store.qu-bd.com/product.php?id_product=142
 3,SPRING,STEEL,,,http://www.mcmaster.com,9654K108,http://www.mcmaster.com/#9654k108/=pkklz1
 33,M8 NYLOC STOP NUT,STEEL/NYLON,,749.524 mm^3,,,
-2,M3 NYLOC STOP NUT,STEEL/NYLON,,50.833 mm^3,,,
+11,M3 NYLOC STOP NUT,STEEL/NYLON,,50.833 mm^3,,,
 3,LIMIT SWITCH,VARIES,,473.476 mm^3,http://www.mouser.com/,611-ZMA00A080L04PC,http://www.mouser.com/Search/ProductDetail.aspx?R=ZMA00A080L04PCvirtualkey61110000virtualkey611-ZMA00A080L04PC
 4,NEMA 17 STEPPER,VARIES,,67718.266 mm^3,http://www.qu-bd.com/,NEMA 17 STEPPER MOTOR 4.5KG*CM,http://store.qu-bd.com/product.php?id_product=46
 1,ANUBIS HOT END,VARIES,,11631.524 mm^3,http://www.qu-bd.com/,ANUBIS 24V HEATER CARTRIDGE KIT,http://store.qu-bd.com/product.php?id_product=137
