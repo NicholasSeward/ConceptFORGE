@@ -33,7 +33,7 @@ QTY,ITEM,MATERIAL,NOTES,VOLUME,SOURCE,PART #,LINK
 6,M3X8,STEEL,,117.218 mm^3,,,
 5,M3X20,STEEL,,202.041 mm^3,,,
 4,6702 BEARING,STEEL,,678.584 mm^3,,,
-2,M4 NUT,STEEL,,107.865 mm^3,,,
+2,M4 FULL NUT,STEEL,,107.865 mm^3,,,
 1,HOBBED PULLEY,STEEL,,,http://www.qu-bd.com/,MK7 *STAINLESS* FILAMENT DRIVE GEAR,http://store.qu-bd.com/product.php?id_product=142
 3,SPRING,STEEL,,,http://www.mcmaster.com,9654K108,http://www.mcmaster.com/#9654k108/=pkklz1
 33,M8 NYLOC STOP NUT,STEEL/NYLON,,749.524 mm^3,,,
