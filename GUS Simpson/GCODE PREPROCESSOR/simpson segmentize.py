@@ -1,3 +1,4 @@
+#!/usr/bin/env python2.6
 #THIS IS A ConceptFORGE PRODUCT.
 #GPL LICENSE
 
@@ -44,7 +45,7 @@ if len(sys.argv)<3:
     f2=file(raw_input("Output File: "),"w")
 else:
     f=file(sys.argv[1])
-    f2=file(sys.argv[2])
+    f2=file(sys.argv[2],"w")                    #Guizmo: added the "w" parameter.
 
 DEFAULT_VALUES=[BED_Z,BED_Z,BED_Z,MAX_ARM_LENGTH,MAX_ARM_LENGTH,MAX_ARM_LENGTH]
 
