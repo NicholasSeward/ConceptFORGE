@@ -16,6 +16,9 @@ except:
     raw_input("PRESS ENTER TO EXIT PROGRAM")
     sys.exit()
 
+#How many mm does the machine think is one rotation of the x or y axis?
+mm_rotation=400    
+
 #various machine coordinate sets where the effector barely touches the bed
 touch_points=[(820,720,149.90),(820,1370,150.5),(1370,820,151),(1200,1200,150.9),(1350,3600,151.40)] 
 
@@ -83,8 +86,8 @@ l=float(l)
 L=float(L)
 y_offset=float(y_offset)
 straight_forearms=float(straight_forearms)
-mechanical_advantage=(straight_forearms/200.0*math.pi+math.asin(1-L/2.0/l)+math.asin(L/4.0/l))/(math.pi-math.acos(1-L/2.0/l))
-
+mm_rotation=float(mm_rotation)
+mechanical_advantage=(straight_forearms/(mm_rotation/2)*math.pi+math.asin(1-L/2.0/l)+math.asin(L/4.0/l))/(math.pi-math.acos(1-L/2.0/l))
 
 
 
@@ -142,7 +145,7 @@ def reference2machine((x,y,z)):
         right_drive=right_small_angle+right_virtual-initial_angle
         left_stepper=-left_drive+(math.pi-left_elbow)*mechanical_advantage
         right_stepper=-right_drive+(math.pi-right_elbow)*mechanical_advantage
-        return left_stepper*200/math.pi,right_stepper*200/math.pi,zprime
+        return left_stepper*mm_rotation/2/math.pi,right_stepper*mm_rotation/2/math.pi,zprime
     except:
         return 0,0,0
 
