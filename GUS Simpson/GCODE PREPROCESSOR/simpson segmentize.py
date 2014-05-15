@@ -46,7 +46,7 @@ if len(sys.argv)<1:
 else:
     f=file(sys.argv[1])
     if len(sys.argv) == 2 :
-        f2=file(sys.argv[1][:-6] + "-GUS.gcode", "w")		#Automatically name output file like "file.gcode-gus.gcode if no output name was typed"
+        f2=file(sys.argv[1].split(".")[0] + "-GUS.gcode", "w")		#Automatically name output file like "file.gcode-gus.gcode if no output name was typed"
     else:
         f2=file(sys.argv[2],"w")                                #Guizmo: added the "w" parameter.
 
