@@ -40,12 +40,18 @@ from scipy.optimize import leastsq
 import numpy.linalg
 import math, random, copy, sys
 
-if len(sys.argv)<3:
+if len(sys.argv)<1:
     f=file(raw_input("Input File: "))
     f2=file(raw_input("Output File: "),"w")
 else:
     f=file(sys.argv[1])
-    f2=file(sys.argv[2],"w")                    #Guizmo: added the "w" parameter.
+    if len(sys.argv) == 2 :
+        f2=file(sys.argv[1][:-6] + "-GUS.gcode", "w")		#Automatically name output file like "file.gcode-gus.gcode if no output name was typed"
+    else:
+        f2=file(sys.argv[2],"w")                                #Guizmo: added the "w" parameter.
+
+        if len(sys.argv) == 4:   
+            SEGMENT_SIZE = float(sys.argv[3])  		        #Let the user select segment size as a third argument
 
 DEFAULT_VALUES=[BED_Z,BED_Z,BED_Z,MAX_ARM_LENGTH,MAX_ARM_LENGTH,MAX_ARM_LENGTH]
 
