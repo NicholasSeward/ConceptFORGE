@@ -40,7 +40,7 @@ from scipy.optimize import leastsq
 import numpy.linalg
 import math, random, copy, sys
 
-if len(sys.argv)<1:
+if len(sys.argv)<2:
     f=file(raw_input("Input File: "))
     f2=file(raw_input("Output File: "),"w")
 else:
@@ -156,8 +156,8 @@ def segmentize(start,end,maxLength):
             output.append(interpolate(start,end,i,n))
         return output
 
-print getABC({"X":45,"Y":0,"Z":1,"F":123})
-print getABC({"X":90,"Y":0,"Z":1,"F":123})
+print(getABC({"X":45,"Y":0,"Z":1,"F":123}))
+print(getABC({"X":90,"Y":0,"Z":1,"F":123}))
 
 
 prefixes="MGXYZESF"
@@ -205,5 +205,5 @@ for line in program:
 
 
 f2.close()
-print "done"
+print("done")
 
